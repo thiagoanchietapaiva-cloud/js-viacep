@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Cep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-blue-600 flex flex-col justify-center items-center p-4">
+
+    <h1 class="text-4xl font-black text-white mb-6">Buscar CEP</h1>
+
+    <form class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm flex flex-col gap-3">
+        <input onkeyup="buscarEndereco(event.target.value)" type="text" placeholder="00000-000"
+            class="w-full px-4 py-3 rounded-xl border-2 border-blue-100 text-center font-bold text-blue-700 outline-none focus:border-blue-600" />
+        <input type="text" id="logradouro" placeholder="Logradouro"
+            class="w-full px-4 py-3 rounded-xl border-2 border-blue-50 bg-blue-50/50 outline-none focus:border-blue-600" />
+        <input type="text" id="bairro" placeholder="Bairro"
+            class="w-full px-4 py-3 rounded-xl border-2 border-blue-50 bg-blue-50/50 outline-none focus:border-blue-600" />
+        <input type="text" id="localidade" placeholder="Cidade"
+            class="w-full px-4 py-3 rounded-xl border-2 border-blue-50 bg-blue-50/50 outline-none focus:border-blue-600" />
+        <input type="text" id="estado" placeholder="Estado"
+            class="w-full px-4 py-3 rounded-xl border-2 border-blue-50 bg-blue-50/50 outline-none focus:border-blue-600" />
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
